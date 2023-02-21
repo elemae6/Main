@@ -1,10 +1,5 @@
-**진하게**
-__진하게__
-*기울이기*
-_기울이기_
-~~취소선~~
-__*~복합~*__
-__*복합*__
-__~복합~__
-*~복합~*
+[Google](https:/www.google.com)
 
+[Google](https:/www.google.com "구글 입니다.")
+
+<https://www.google.com)
