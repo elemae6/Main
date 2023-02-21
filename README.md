@@ -7,8 +7,11 @@ Tech Interview Study
 
 >ㄴㅇㄹ
 >>ㅁㄴㅇ  
+---
   ㄴㄹㅇ
   
+ㅁㄹㄴ
+---  
 
 ### :page_facing_up: How to contribute
 1. 매주 스터디 할 CS 주제들을 스터디 일주일 전 issue로 등록한다.
