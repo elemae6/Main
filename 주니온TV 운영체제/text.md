@@ -49,7 +49,7 @@
 - OS API라고도 불린다.
 #### 시스템 소프트웨어   
 - 시스템 소프트웨어는 하드웨어와 응용 소프트웨어 사이를 이어주는 역할
-- 시스템 소프트웨어의 예시로 운영체제, 컴파일러, 어셈블러, DBMS, VACCINE, 드라이버 관리 프로그램 등이 있다.
+- 시스템 소프트웨어의 예시로 운영체제, 컴파일러, 어셈블러, DBMS, VACCINE, 드라이버 관리 프로그램, 웹서버,  등이 있다.
 
 ![image](https://user-images.githubusercontent.com/81418010/221080561-b0874f6c-ecc8-420b-a4b7-f52e2a48ee52.png)
 ![image](https://user-images.githubusercontent.com/81418010/221080650-1d98518c-5781-48e4-8c47-70dad94c4c47.png)
