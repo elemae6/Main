@@ -47,4 +47,8 @@
 #### System calls
 - 운영체제의 커널이 제공하는 서비스에 대해 응용프로그램의 요청에 따라 커널에 접근하기 위한 인터페이스
 - OS API라고도 불린다.
+#### 시스템 소프트웨어   
+- 시스템 소프트웨어는 하드웨어와 응용 소프트웨어 사이를 이어주는 역할
+- 시스템 소프트웨어의 예시로 운영체제, 컴파일러, 어셈블러, DBMS, VACCINE, 드라이버 관리 프로그램 등이 있다.
+
 ![image](http://wiki.hash.kr/images/thumb/f/f6/%EC%8B%9C%EC%8A%A4%ED%85%9C_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B5%AC%EC%A1%B0.png/400px-%EC%8B%9C%EC%8A%A4%ED%85%9C_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B5%AC%EC%A1%B0.png)
