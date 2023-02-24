@@ -50,5 +50,5 @@
 #### 시스템 소프트웨어   
 - 시스템 소프트웨어는 하드웨어와 응용 소프트웨어 사이를 이어주는 역할
 - 시스템 소프트웨어의 예시로 운영체제, 컴파일러, 어셈블러, DBMS, VACCINE, 드라이버 관리 프로그램 등이 있다.
-
+![image](https://user-images.githubusercontent.com/81418010/221080561-b0874f6c-ecc8-420b-a4b7-f52e2a48ee52.png)
 ![image](http://wiki.hash.kr/images/thumb/f/f6/%EC%8B%9C%EC%8A%A4%ED%85%9C_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B5%AC%EC%A1%B0.png/400px-%EC%8B%9C%EC%8A%A4%ED%85%9C_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B5%AC%EC%A1%B0.png)
