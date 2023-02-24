@@ -13,7 +13,7 @@
 - 휴대폰은 컴퓨터X 운영체제가 없어서
 - 스마트폰은 컴퓨터O 안드로이드, IOS와 같은 운영체제가 있어서
 - 스마트TV, 스마트워치도 컴퓨터
-![image](https://user-images.githubusercontent.com/81418010/221063573-0a6e2f73-7fa7-455f-ac46-3beaa9b1b34e.png)
+<img src="https://user-images.githubusercontent.com/81418010/221063573-0a6e2f73-7fa7-455f-ac46-3beaa9b1b34e.png" height="200px" width="600">
 <br><br>
 #### 부트스트램 프로그램   
 - 컴퓨터 처음 켰을 때 CPU가 ROM에 있는 bootstrap 프로그램을 실행한다.
@@ -50,6 +50,7 @@
 #### 시스템 소프트웨어   
 - 시스템 소프트웨어는 하드웨어와 응용 소프트웨어 사이를 이어주는 역할
 - 시스템 소프트웨어의 예시로 운영체제, 컴파일러, 어셈블러, DBMS, VACCINE, 드라이버 관리 프로그램 등이 있다.
+
 ![image](https://user-images.githubusercontent.com/81418010/221080561-b0874f6c-ecc8-420b-a4b7-f52e2a48ee52.png)
 ![image](https://user-images.githubusercontent.com/81418010/221080650-1d98518c-5781-48e4-8c47-70dad94c4c47.png)
 
