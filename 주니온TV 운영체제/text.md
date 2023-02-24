@@ -10,3 +10,4 @@
 - 휴대폰은 컴퓨터X 운영체제가 없어서
 - 스마트폰은 컴퓨터O 안드로이드, IOS와 같은 운영체제가 있어서
 - 스마트TV, 스마트워치도 컴퓨터
+![image](https://user-images.githubusercontent.com/81418010/221063573-0a6e2f73-7fa7-455f-ac46-3beaa9b1b34e.png)
