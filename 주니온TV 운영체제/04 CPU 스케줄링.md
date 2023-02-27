@@ -118,9 +118,13 @@
 - 커널은 그저 커널 쓰레드를 사용자 쓰레드와 맵핑만 해준다.
 - 운영체제 커널은 CPU 스케줄링을 커널 쓰레드로 스케줄링한다.
 
-
- 
- 
+#### Real-Time Operating System (RTOS) 스케줄링   
+- Real-Time OS은 주어진 시간 내에 task를 완료하는 OS
+- soft realtime vs hard realtime
+- soft realtime
+  - soft realtime에서는 중요한 프로세스가 안 중요한 프로세스보다 선호되는 것은 맞지만 언제 스케줄 될지는 보장이 안된다. (ex. 전화통화 중 한두 번 끊기는 경우)
+  - hard realtime에서는 엄격한 요구사항이 있어서 task가 마감기한 안에 기능을 해야한다. 
+ - Priority를 이용하여 구현해야 한다.
 
 
 
