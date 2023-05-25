@@ -9,6 +9,5 @@
 ![image](https://github.com/elemae6/Main/assets/81418010/8892feca-7a7b-40bf-9ea3-89456e4c17a9)  
 ![image](https://github.com/elemae6/Main/assets/81418010/8dd732f5-edb4-499b-acc1-13f8803e814c)  
 ![image](https://github.com/elemae6/Main/assets/81418010/2e713987-fd6e-4a4c-8e58-f14ecd4577e9)  
-![image](https://github.com/elemae6/Main/assets/81418010/96837d82-26e2-4aef-ad3a-3a132f7e9cad)  
-![image](https://github.com/elemae6/Main/assets/81418010/4ad148cb-6158-4af5-8c48-0f44b1730c9b)  
+![image](https://github.com/elemae6/Main/assets/81418010/8118c406-3294-473f-9271-dbc299fd1617)  
 ![image](https://github.com/elemae6/Main/assets/81418010/d8091526-f9ef-44ce-8fbb-6e1981bb8181)  
