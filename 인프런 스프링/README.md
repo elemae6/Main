@@ -18,3 +18,8 @@ spring.output.ansi.enabled=ALWAYS
 4. 파일 > 설정 > 에디터 > 파일 인코딩
 > 프로퍼티 파일에 대한 디폴트 인코딩: UTF-8
 <br>
+
+5. build.gradle > dependencies
+> compileOnly 'com.google.code.findbugs:jsr305:3.0.2'  
+> compileOnly 'org.checkerframework:checker-qual:3.14.0'
+<br>
