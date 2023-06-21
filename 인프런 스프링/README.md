@@ -5,7 +5,7 @@ logging.level.hello.springmvc=debug
 spring.output.ansi.enabled=ALWAYS       
 #spring.messages.basename=messages                     //메시지 사용 시, 추가  
 #server.servlet.session.tracking-modes=cookie          //쿠키 사용 시, 추가
-#server.servlet.session.timeout=60                     //세션 타임아웃 설정 변경 시, 추가
+#server.servlet.session.timeout=1800                     //세션 타임아웃 설정 변경 시, 추가
 ```
 <br>
 
