@@ -1,8 +1,6 @@
 <br><br>
 #### [개발자 로드맵 | kamranahmedse](https://github.com/kamranahmedse/developer-roadmap)   
 <br><br>   
-#### [백엔드 개발자 로드맵 | zero-base](https://zero-base.co.kr/event/media_BE_school_roadmap)
-<br><br>
 #### [백엔드 개발자 면접 질문 | ksundong](https://github.com/ksundong/backend-interview-question)
 <br><br>
 #### [백엔드 개발자 면접 질문 | JaeYeopHa](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
