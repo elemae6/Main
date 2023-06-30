@@ -1,7 +1,7 @@
 ### IntelliJ IDEA Spring Boot Project 초기 설정  
 1. application.properties
 ```
-logging.level.hello.springmvc=debug
+logging.level.hello.springmvc=debug                    //hello.springmvc는 프로젝트명에 따라 변경
 spring.output.ansi.enabled=ALWAYS
 #spring.messages.basename=messages                     //메시지 사용 시, 추가  
 #server.servlet.session.tracking-modes=cookie          //쿠키 사용 시, 추가
