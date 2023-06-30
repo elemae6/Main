@@ -6,3 +6,8 @@
 
 ### 솔루션 탐색기 > (프로젝트 오른쪽 클릭) > 속성 > 구성 속성 > C/C++ > 전처리기 > 전처리기 정의 > (드롭 다운) > 편집  
 > _SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING   
+<br>
+<br>
+<br>
+----------------------------
+vector의 size()는 unsigned int를 반환하니 주의
