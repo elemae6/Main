@@ -38,5 +38,5 @@ spring.output.ansi.enabled=ALWAYS
 2. javax 패키지 이름을 jakarta로 변경     
 > 예) javax.persistence.Entity => jakarta.persistence.Entity  
   
-3. H2 데이터베이스는 2.1.214 버전 이상    
+3. H2 데이터베이스는 2.1.214 버전 이상 사용   
 <br>   
