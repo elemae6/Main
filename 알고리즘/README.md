@@ -9,5 +9,7 @@
 <br>
 <br>
 <br>
-----------------------------<br>
+
+---
+<br>
 vector의 size()는 unsigned int를 반환하니 주의
