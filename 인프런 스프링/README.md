@@ -27,6 +27,8 @@ spring.output.ansi.enabled=ALWAYS
 > compileOnly 'org.checkerframework:checker-qual:3.14.0'
 <br>
 
+--- 
+
 #### 스프링 부트 3.0 이상일 경우  
 1. Java 17 이상 사용
 - 로컬 운영체제의 java -version
