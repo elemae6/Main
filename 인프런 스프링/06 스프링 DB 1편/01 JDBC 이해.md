@@ -9,4 +9,3 @@
 ![image](https://github.com/elemae6/Main/assets/81418010/edcae892-7842-4016-a3b0-67210ccc9a12)  
 ![image](https://github.com/elemae6/Main/assets/81418010/d627b5c7-2ddf-45fe-a2c5-ef5e4032b1af)  
 ![image](https://github.com/elemae6/Main/assets/81418010/0ed21839-7bfd-44ec-87d5-61cc2f8dbf67)  
-![image](https://github.com/elemae6/Main/assets/81418010/8fd0ac60-5a8b-4313-ad13-81b0c692b1d9)  
