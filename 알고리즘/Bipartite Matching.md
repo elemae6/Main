@@ -6,3 +6,5 @@
 <br>
 
 ### [BOJ 1017](https://www.acmicpc.net/problem/1017)  
+
+### [BOJ 1671](https://www.acmicpc.net/problem/1671)
