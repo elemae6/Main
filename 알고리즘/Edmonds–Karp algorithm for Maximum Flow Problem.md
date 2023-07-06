@@ -2,5 +2,5 @@
 ### [블로그](https://velog.io/@dpmawile/boj2316)  
 ### [geeksforgeek](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)  
 ---
-### [ChatGpt](https://chat.openai.com/c/b08345cb-0086-46e9-ace3-0245c1af2659)
+### [ChatGpt](https://chat.openai.com/share/afef39b3-8c5d-48f8-8830-2b2cc5ea7d74)
 
