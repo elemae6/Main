@@ -1,3 +1,16 @@
+### Spring Initializr Dependencies  
+> Spring Web  
+> Validation  
+> Thymeleaf  
+> Lombok  
+> Spring Boot DevTools  
+> Spring Data JPA  
+> H2 Database  
+- 외부 사이트에서 추가
+  - test용 lombok
+  - P6SPY (Spring Bootd Data Source  Decorator)
+ 
+---  
 ### IntelliJ IDEA Spring Boot Project 초기 설정  
 1. application.properties
 ```
