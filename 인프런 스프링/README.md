@@ -24,7 +24,8 @@ spring.output.ansi.enabled=ALWAYS
 
 5. build.gradle > dependencies
 > testCompileOnly 'org.projectlombok:lombok:1.18.28'  
-> testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'  
+> testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+> implementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:${version}")          // JPA 사용 시 추가
 <br>
 
 --- 
