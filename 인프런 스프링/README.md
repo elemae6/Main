@@ -6,10 +6,13 @@
 > Spring Boot DevTools  
 > Spring Data JPA  
 > H2 Database  
-- 외부 사이트에서 추가
-  - test용 lombok
-  - P6SPY (Spring Boot Data Source  Decorator)
- 
+- 외부 사이트에서 추가  
+> 테스트용 Lombok  
+> Spring Boot Data Source Decorator  
+>> testCompileOnly 'org.projectlombok:lombok:1.18.28'  
+>> testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'  
+>> implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'  
+  
 ---  
 ### IntelliJ IDEA Spring Boot Project 초기 설정  
 1. application.properties
@@ -33,12 +36,6 @@ spring.output.ansi.enabled=ALWAYS
 
 4. 파일 > 설정 > 에디터 > 파일 인코딩
 > 프로퍼티 파일에 대한 디폴트 인코딩: UTF-8
-<br>
-
-5. build.gradle > dependencies
-> testCompileOnly 'org.projectlombok:lombok:1.18.28'  
-> testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
-> implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'          // JPA 사용 시 추가
 <br>
 
 --- 
