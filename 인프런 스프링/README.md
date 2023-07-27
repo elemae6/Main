@@ -16,8 +16,11 @@
 ---  
 ### IntelliJ IDEA Spring Boot Project 초기 설정  
 1. application.properties
+> application.yml로 변경 가능
 ```
 logging.level.hello.springmvc=debug                    //hello.springmvc는 프로젝트명에 따라 변경
+logging.level.org.hibernate.SQL=debug
+logging.level.org.hibernate.orm.jdbc.bind=trace
 spring.output.ansi.enabled=ALWAYS
 #spring.messages.basename=messages                     //메시지 사용 시, 추가  
 #server.servlet.session.tracking-modes=cookie          //쿠키 사용 시, 추가
@@ -34,8 +37,9 @@ spring.output.ansi.enabled=ALWAYS
 > 어노테이션 처리 활성화
 <br>
 
-4. 파일 > 설정 > 에디터 > 파일 인코딩
-> 프로퍼티 파일에 대한 디폴트 인코딩: UTF-8
+4. 파일 > 설정 > 에디터 > 파일 인코딩    
+> 프로퍼티 파일에 대한 디폴트 인코딩: UTF-8  
+>> application.properties 사용 시 한글 깨짐 방지 용도로 application.yml 사용 시 안해도 된다.
 <br>
 
 --- 
