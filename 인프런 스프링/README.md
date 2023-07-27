@@ -23,8 +23,6 @@ spring.output.ansi.enabled=ALWAYS
 <br>
 
 5. build.gradle > dependencies
-> compileOnly 'com.google.code.findbugs:jsr305:3.0.2'  
-> compileOnly 'org.checkerframework:checker-qual:3.14.0'  
 > testCompileOnly 'org.projectlombok:lombok:1.18.28'  
 > testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'  
 <br>
