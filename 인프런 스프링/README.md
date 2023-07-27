@@ -48,4 +48,8 @@ spring.output.ansi.enabled=ALWAYS
 3. Console 앞에 숫자 확인 (예. 12612 Console)  
 4. taskkill /f /pid 12612 입력 (12612대신 해당 숫자)  
 
+---  
+### OpenJDK 사용하여 실행 시 경고 문구 끄기  
+> OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended  
+- 실행 > 구성 편집 > VM 옵션 창 > '-Xshare:off' 추가  
 ---
