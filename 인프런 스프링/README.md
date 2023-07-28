@@ -47,7 +47,7 @@ spring.output.ansi.enabled=ALWAYS
 #### 스프링 부트 3.0 이상일 경우  
 1. Java 17 이상 사용
 - 로컬 운영체제의 java -version
-- 파일 > 설정 > 빌드, 실행, 배포 > 빌드 도구 > Gradle > Gradle 프로젝트 > Gradle > Gradle JVM:   
+- 파일 > 설정 > 빌드, 실행, 배포 > 빌드 도구 > Gradle > Gradle 프로젝트 > Gradle > Gradle JVM   
 - 파일 >프로젝트 구조 > 프로젝트 설정 > 프로젝트 > SDK  
   
 2. javax 패키지 이름을 jakarta로 변경     
