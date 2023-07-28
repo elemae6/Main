@@ -61,7 +61,7 @@ spring.output.ansi.enabled=ALWAYS
 1. 윈도우 > 명령 프롬프트  
 2. jps 입력  
 3. Console 앞에 숫자 확인 (예. 12612 Console)  
-4. taskkill /f /pid 12612 입력 (12612대신 해당 숫자)  
+4. taskkill /f /pid 12612 입력 (12612 대신 해당 숫자)  
 
 ---  
 ### OpenJDK로 실행 시 해당 경고 문구 끄기  
