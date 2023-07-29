@@ -9,3 +9,8 @@
 <br>
 
 ### [BOJ 1671](https://www.acmicpc.net/problem/1671)
+<br>  
+
+--- 
+### Minimum Vertex Cover  
+### [BOJ 1867](https://www.acmicpc.net/problem/1867)  
