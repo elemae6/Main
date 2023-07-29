@@ -14,5 +14,5 @@
 --- 
 ### Minimum Vertex Cover  
 ### [BOJ 1867](https://www.acmicpc.net/problem/1867)  
-쾨니그의 정리(Kőnig’s theorem)에 따르면 이분 그래프에서 최대 매칭의 수와 최소 꼭짓점 덮개(Minimum Vertex Cover)의 수는 같다.  
+> 쾨니그의 정리(Kőnig’s theorem)에 따르면 이분 그래프에서 최대 매칭의 수와 최소 꼭짓점 덮개(Minimum Vertex Cover)의 수는 같다.  
 <br>
