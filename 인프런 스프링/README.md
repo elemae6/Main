@@ -54,6 +54,10 @@ server.servlet.session.timeout=1800                          //세션 타임아�
 >> application.properties 사용 시 한글 깨짐 방지 용도로 application.yml 사용 시 안해도 된다.
 <br>
 
+5. .gitignore에 추가  
+> src/main/generated/  
+<br>  
+
 --- 
 
 #### 스프링 부트 3.0 이상일 경우  
