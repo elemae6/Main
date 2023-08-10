@@ -9,8 +9,8 @@
 - 외부 사이트에서 추가  
 > 테스트용 Lombok  
 > Spring Boot Data Source Decorator  
->> testCompileOnly 'org.projectlombok:lombok:1.18.28'  
->> testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'  
+>> testCompileOnly 'org.projectlombok:lombok'  
+>> testAnnotationProcessor 'org.projectlombok:lombok'  
 >> implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'  
   
 ---  
