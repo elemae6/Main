@@ -12,8 +12,11 @@
 >> testCompileOnly 'org.projectlombok:lombok'  
 >> testAnnotationProcessor 'org.projectlombok:lombok'  
 >> implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'  
-  
+<br>
+
 ---  
+<br>
+
 ### IntelliJ IDEA Spring Boot Project 초기 설정  
 1. application.properties
 > application.yml로 변경 가능
@@ -38,7 +41,7 @@ spring.messages.basename=messages                            //메시지 사용 
 server.servlet.session.tracking-modes=cookie                 //쿠키 사용 시, 추가
 server.servlet.session.timeout=1800                          //세션 타임아웃 설정 변경 시, 추가
 ```
-<br>
+<br>  
 
 2. 파일 > 설정 > 빌드, 실행, 배포 > 빌드 도구 > Gradle   
 > 다음을 사용하여 빌드 및 실행: IntelliJ IDEA  
@@ -56,9 +59,10 @@ server.servlet.session.timeout=1800                          //세션 타임아�
 
 5. .gitignore에 추가  
 > src/main/generated/  
-<br>  
+<br>
 
---- 
+---
+<br>  
 
 #### 스프링 부트 3.0 이상일 경우  
 1. Java 17 이상 사용
@@ -73,14 +77,58 @@ server.servlet.session.timeout=1800                          //세션 타임아�
 <br>
 
 ---
+<br>  
+
 ### H2 서버 종료  
 1. 윈도우 > 명령 프롬프트  
 2. jps 입력  
 3. Console 앞에 숫자 확인 (예. 12612 Console)  
 4. taskkill /f /pid 12612 입력 (12612 대신 해당 숫자)  
+<br>
 
----  
+---
+<br>  
+
 ### OpenJDK로 실행 시 해당 경고 문구 끄기  
 > OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended  
 - 실행 > 구성 편집 > VM 옵션 창 > '-Xshare:off' 추가  
+<br>
+
 ---
+<br>  
+
+### QueryDsl 설정
+1. build.gradle에 추가
+```
+plugins {
+	id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
+}
+dependencies {
+	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+	annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
+	annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
+	annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
+}
+//querydsl 추가 시작
+def querydslDir = "$buildDir/generated/querydsl"
+querydsl {
+	jpa = true
+	querydslSourcesDir = querydslDir
+}
+sourceSets {
+	main.java.srcDir querydslDir
+}
+configurations {
+	querydsl.extendsFrom compileClasspath
+}
+compileQuerydsl {
+	options.annotationProcessorPath = configurations.querydsl
+}
+//querydsl 추가 끝
+```
+2. Gradle > Tasks > other > compileQuerydsl 더블 클릭
+<br>
+
+---
+<br>  
+
