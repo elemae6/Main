@@ -66,7 +66,7 @@ server.servlet.session:
 <br>  
 
 ### QueryDsl 설정
-- build.gradle
+1. build.gradle
 ```gradle
 plugins {
 	id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
@@ -93,11 +93,11 @@ compileQuerydsl {
 	options.annotationProcessorPath = configurations.querydsl
 }
 ```
-1. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
+2. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
 ```
 /libs 디렉토리 생성
 ```  
-2. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1
+3. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1
 ```
 \com.querydsl
 \com.mysema.home
@@ -106,7 +106,7 @@ compileQuerydsl {
 프로젝트의 루트 디렉토리 내 \libs 내에 복사
 (단, querydsl-core의 경우 버전으로 끝나는 것을 복사)
 ```
-3. build.gradle
+4. build.gradle
 ```
 두 개 주석 처리
 dependencies {
@@ -116,7 +116,7 @@ dependencies {
 ```
 <br>  
 
-4. IntelliJ IDEA 오른쪽 상단에 Gradle
+5. IntelliJ IDEA 오른쪽 상단에 Gradle
 ```
 Gradle > Tasks > other > compileQuerydsl 더블 클릭
 ```
