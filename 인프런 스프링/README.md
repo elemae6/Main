@@ -95,7 +95,7 @@ compileQuerydsl {
 ```
 2. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
 ```
-/libs 디렉토리 생성
+\libs 디렉토리 생성
 ```  
 3. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1
 ```
