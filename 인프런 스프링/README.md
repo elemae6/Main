@@ -1,3 +1,4 @@
+## Spring Boot 초기 설정 
 ### Dependencies  
 - Spring Initializer
 ```
@@ -22,8 +23,8 @@ implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'       
 ---  
 <br>
 
-### IntelliJ IDEA Spring Boot Project 초기 설정  
-1. application.yml
+### IntelliJ IDEA 초기 설정 
+- application.yml
 ```yaml
 logging:
   level:
@@ -48,14 +49,14 @@ server.servlet.session:
 ```
 <br>  
 
-2. 파일 > 설정 > 빌드, 실행, 배포 > 빌드 도구 > Gradle   
+- 파일 > 설정 > 빌드, 실행, 배포 > 빌드 도구 > Gradle   
 ```
 다음을 사용하여 빌드 및 실행: IntelliJ IDEA  
 다음을 사용하여 테스트 실행: IntelliJ IDEA
 ```
 <br>
 
-3. 파일 > 설정 > 빌드, 실행, 배포 > 컴파일러 > 어노테이션 프로세서
+- 파일 > 설정 > 빌드, 실행, 배포 > 컴파일러 > 어노테이션 프로세서
 ```
 어노테이션 처리 활성화
 ```
@@ -65,7 +66,7 @@ server.servlet.session:
 <br>  
 
 ### QueryDsl 설정
-1. build.gradle
+- build.gradle
 ```gradle
 plugins {
 	id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
@@ -93,11 +94,11 @@ compileQuerydsl {
 }
 ```
 - 스프링 부트 3.0 이상일 경우  
-2. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1\com.querydsl\querydsl-jpa\5.0.0
+1. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1\com.querydsl\querydsl-jpa\5.0.0
 ```
 여러 숫자 디렉터리 안의 파일 중 'querydsl-jpa-5.0.0-jakarta' 복사
 ```
-3. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
+2. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
 ```
 /libs 디렉토리 생성
 'querydsl-jpa-5.0.0-jakarta' 붙여넣기
@@ -106,29 +107,31 @@ compileQuerydsl {
 <br>
 
 - 스프링 부트 버전 상관 없이 공통
-4. IntelliJ에서 Gradle > Tasks > other > compileQuerydsl 더블 클릭
-##### ** 앞으로 QueryDsl 사용 시, 빌드 전에 ./gradle clean 후 실행 **
+```
+IntelliJ에서 Gradle > Tasks > other > compileQuerydsl 더블 클릭
+```
+##### ** 앞으로 QueryDsl 사용 시, 빌드 전에 Gradle > Tasks > build > clean 혹은 ./gradle clean 후 실행 **
 <br>
 
 ---
 <br>  
 
 #### 스프링 부트 3.0 이상일 경우  
-1. Java 17 이상 사용
+- Java 17 이상 사용
 - 로컬 운영체제의 java -version
 - 파일 > 설정 > 빌드, 실행, 배포 > 빌드 도구 > Gradle > Gradle 프로젝트 > Gradle > Gradle JVM   
 - 파일 >프로젝트 구조 > 프로젝트 설정 > 프로젝트 > SDK  
   
-2. javax 패키지 이름을 jakarta로 변경     
+- javax 패키지 이름을 jakarta로 변경     
 > 예) javax.persistence.Entity => jakarta.persistence.Entity  
   
-3. H2 데이터베이스는 2.1.214 버전 이상 사용   
+- H2 데이터베이스는 2.1.214 버전 이상 사용   
 <br>
 
 ---
 <br>  
 
-### H2 서버 종료  
+#### H2 서버 종료  
 1. 윈도우 > 명령 프롬프트  
 2. jps 입력  
 3. Console 앞에 숫자 확인 (예. 12612 Console)  
@@ -138,9 +141,11 @@ compileQuerydsl {
 ---
 <br>  
 
-### OpenJDK로 실행 시 해당 경고 문구 끄기  
-> OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended  
-- 실행 > 구성 편집 > VM 옵션 창 > '-Xshare:off' 추가  
+#### OpenJDK로 실행 시 해당 경고 문구 끄기  
+```
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+실행 > 구성 편집 > VM 옵션 창 > '-Xshare:off' 추가
+```
 <br>  
 
 ---
