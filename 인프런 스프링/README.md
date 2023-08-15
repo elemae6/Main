@@ -123,7 +123,9 @@ IntelliJ에서 Gradle > Tasks > other > compileQuerydsl 더블 클릭
 - 파일 >프로젝트 구조 > 프로젝트 설정 > 프로젝트 > SDK  
   
 - javax 패키지 이름을 jakarta로 변경     
-> 예) javax.persistence.Entity => jakarta.persistence.Entity  
+```
+예) javax.persistence.Entity => jakarta.persistence.Entity
+```
   
 - H2 데이터베이스는 2.1.214 버전 이상 사용   
 <br>
@@ -143,7 +145,9 @@ IntelliJ에서 Gradle > Tasks > other > compileQuerydsl 더블 클릭
 
 #### OpenJDK로 실행 시 해당 경고 문구 끄기  
 ```
-OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+OpenJDK 64-Bit Server VM warning:
+Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
 실행 > 구성 편집 > VM 옵션 창 > '-Xshare:off' 추가
 ```
 <br>  
