@@ -102,7 +102,10 @@ compileQuerydsl {
 \com.querydsl
 \com.mysema.home
 \com.mysema.commons
-내의 여러 숫자 디렉토리 안의 파일 중 버전에 맞는 디렉토리 내의 jakarta로 끝나는 JAR 파일 복사한 후,
+각 디렉토리 내
+  > 버전에 맞는 디렉토리 내
+    > 여러 숫자 디렉토리 내
+       > 파일 중 jakarta로 끝나는 JAR 파일 복사 후,
 프로젝트의 루트 디렉토리 내 \libs 내에 복사
 (단, querydsl-core의 경우 버전으로 끝나는 것을 복사)
 ```
@@ -116,8 +119,9 @@ dependencies {
 ```
 <br>  
 
-5. IntelliJ IDEA 오른쪽 상단에 Gradle
+- Entity 클래스를 생성 및 변경 후, Q클래스 컴파일
 ```
+IntelliJ IDEA 오른쪽 상단에 Gradle
 Gradle > Tasks > other > compileQuerydsl 더블 클릭
 ```
 <br>
@@ -141,7 +145,8 @@ Gradle > Tasks > other > compileQuerydsl 더블 클릭
 
 ---
 <br>  
-#### 윈도우 터미널로 빌드
+
+#### 윈도우 터미널로 빌드  
 1. 해당 프로젝트 루트 디렉토리에서 윈도우 Command Prompt 실행 (윈도우 탐색기의 디렉토리 주소창 클릭 후 cmd후 엔터)
 2. gradlew clean build
 3. cd build\libs
