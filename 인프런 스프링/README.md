@@ -20,26 +20,30 @@
 ### IntelliJ IDEA Spring Boot Project 초기 설정  
 1. application.properties
 > application.yml로 변경 가능
-```
-logging.level.hello.springmvc=debug                    //hello.springmvc는 프로젝트명에 따라 변경
-logging.level.org.hibernate.SQL=debug                  // SQL 로깅
-spring.output.ansi.enabled=ALWAYS                     // 로깅 색깔
-
-spring.h2.console.enabled=true                   // H2를 웹브라우저 상에 접속 허용
-spring.h2.console.path=/h2-console               // H2를 웹브라우저 상 접속 시 주소 ex)localhost:8080/h2-console
-
-spring.datasource.url=jdbc:h2:tcp://localhost/~/jpashop     //H2 접속 주소
-spring.datasource.username=sa                               //H2 접속 아이디
-spring.datasource.password=                                 //H2 접속 비밀번호
-
-spring.jpa.hibernate.ddl-auto=none                         // 하이버네이트 데이터를 시작할 때마다 생성할지 여부
-spring.jpa.properties.hibernate.format_sql=true            // SQL 로깅
-spring.jpa.properties.hibernate.default_batch_fetch_size=1000     // Lazy 로딩 시 fetch하는 데이터의 양
-spring.jpa.open-in-view=false                                     // OSIV
-
-spring.messages.basename=messages                            //메시지 사용 시, 추가  
-server.servlet.session.tracking-modes=cookie                 //쿠키 사용 시, 추가
-server.servlet.session.timeout=1800                          //세션 타임아웃 설정 변경 시, 추가
+```yaml
+logging:
+  level:
+    hello.springmvc: debug                    //hello.springmvc는 프로젝트명에 따라 변경
+    org.hibernate.SQL: debug                  // SQL 로깅
+spring:
+  output.ansi.enabled: ALWAYS                     // 로깅 색깔
+  h2.console:
+    enabled: true                   // H2를 웹브라우저 상에 접속 허용
+    path: /h2-console               // H2를 웹브라우저 상 접속 시 주소 ex)localhost:8080/h2-console
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/jpashop     //H2 접속 주소
+    username: sa                               //H2 접속 아이디
+    password:                                 //H2 접속 비밀번호
+  jpa:
+    hibernate.ddl-auto: none                         // 하이버네이트 데이터를 시작할 때마다 생성할지 여부
+    properties.hibernate:
+      format_sql: true            // SQL 로깅
+      default_batch_fetch_size: 1000     // Lazy 로딩 시 fetch하는 데이터의 양
+    open-in-view: false                                     // OSIV
+  messages.basename: messages                            //메시지 사용 시, 추가  
+server.servlet.session:
+  tracking-modes: cookie                 //쿠키 사용 시, 추가
+  timeout: 1800                          //세션 타임아웃 설정 변경 시, 추가
 ```
 <br>  
 
@@ -62,7 +66,7 @@ server.servlet.session.timeout=1800                          //세션 타임아�
 
 ### QueryDsl 설정
 1. build.gradle에 추가
-```
+```gradle
 plugins {
 	id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
 }
