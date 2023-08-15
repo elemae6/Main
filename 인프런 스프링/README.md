@@ -111,11 +111,11 @@ compileQuerydsl {
 ```
 4. build.gradle
 ```
-두 개 주석 처리
 dependencies {
 	//implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
 	//annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
 }
+두 개 주석 처리
 ```
 <br>  
 
