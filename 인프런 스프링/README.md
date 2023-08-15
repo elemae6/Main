@@ -57,8 +57,47 @@ server.servlet.session.timeout=1800                          //세션 타임아�
 >> application.properties 사용 시 한글 깨짐 방지 용도로 application.yml 사용 시 안해도 된다.
 <br>
 
-5. .gitignore에 추가  
-> src/main/generated/  
+---  
+<br>  
+
+### QueryDsl 설정
+1. build.gradle에 추가
+```
+plugins {
+	id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
+}
+dependencies {
+	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+	annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
+	annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
+	annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
+}
+//querydsl 추가 시작
+def querydslDir = "$buildDir/generated/querydsl"
+querydsl {
+	jpa = true
+	querydslSourcesDir = querydslDir
+}
+sourceSets {
+	main.java.srcDir querydslDir
+}
+configurations {
+	querydsl.extendsFrom compileClasspath
+}
+compileQuerydsl {
+	options.annotationProcessorPath = configurations.querydsl
+}
+//querydsl 추가 끝
+```
+2. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1\com.querydsl\querydsl-jpa\5.0.0
+> 여러 파일 중 'querydsl-jpa-5.0.0-jakarta' 복사
+3. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
+> /libs 디렉토리 생성
+> 'querydsl-jpa-5.0.0-jakarta' 붙여넣기
+4. IntelliJ에서 Gradle > Tasks > other > compileQuerydsl 더블 클릭
+##### * 외부 라이브러리의 javax import한 파일 대신 libs의 jakarta를 import한 파일 사용
+##### * 빌드 전에 ./gradle clean 후 실행
 <br>
 
 ---
@@ -95,39 +134,7 @@ server.servlet.session.timeout=1800                          //세션 타임아�
 <br>
 
 ---
-<br>  
 
-### QueryDsl 설정
-1. build.gradle에 추가
-```
-plugins {
-	id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
-}
-dependencies {
-	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
-	annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
-	annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
-	annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
-}
-//querydsl 추가 시작
-def querydslDir = "$buildDir/generated/querydsl"
-querydsl {
-	jpa = true
-	querydslSourcesDir = querydslDir
-}
-sourceSets {
-	main.java.srcDir querydslDir
-}
-configurations {
-	querydsl.extendsFrom compileClasspath
-}
-compileQuerydsl {
-	options.annotationProcessorPath = configurations.querydsl
-}
-//querydsl 추가 끝
-```
-2. Gradle > Tasks > other > compileQuerydsl 더블 클릭
-<br>
 
 ---
 <br>  
