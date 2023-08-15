@@ -147,7 +147,7 @@ Gradle > Tasks > other > compileQuerydsl 더블 클릭
 <br>  
 
 #### 윈도우 터미널로 빌드  
-1. 해당 프로젝트 루트 디렉토리에서 윈도우 Command Prompt 실행 (윈도우 탐색기의 디렉토리 주소창 클릭 후 cmd후 엔터)
+1. 해당 프로젝트 루트 디렉토리(build.gradle이 있는 디렉토리)에서 윈도우 프롬프트 실행 (디렉토리 주소창에서 cmd 엔터)
 2. gradlew clean build
 3. cd build\libs
 4. java -jar "해당 JAR 파일"
