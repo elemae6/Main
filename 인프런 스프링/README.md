@@ -72,11 +72,11 @@ plugins {
 	id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
 }
 dependencies {
-	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
-	annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
 	annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
 	annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
+	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+	annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
 }
 def querydslDir = "$buildDir/generated/querydsl"
 querydsl {
@@ -93,24 +93,33 @@ compileQuerydsl {
 	options.annotationProcessorPath = configurations.querydsl
 }
 ```
-- 스프링 부트 3.0 이상일 경우  
-1. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1\com.querydsl\querydsl-jpa\5.0.0
-```
-여러 숫자 디렉터리 안의 파일 중 'querydsl-jpa-5.0.0-jakarta' 복사
-```
-2. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
+1. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
 ```
 /libs 디렉토리 생성
-'querydsl-jpa-5.0.0-jakarta' 붙여넣기
+```  
+2. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1
 ```
-##### ** 외부 라이브러리의 javax import한 파일 대신 /libs의 jakarta를 import한 파일 사용 **
-<br>
+\com.querydsl
+\com.mysema.home
+\com.mysema.commons
+내의 여러 숫자 디렉토리 안의 파일 중 버전에 맞는 디렉토리 내의 jakarta로 끝나는 JAR 파일 복사한 후,
+프로젝트의 루트 디렉토리 내 \libs 내에 복사
+(단, querydsl-core의 경우 버전으로 끝나는 것을 복사)
+```
+3. build.gradle
+```
+두 개 주석 처리
+dependencies {
+	//implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+	//annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
+}
+```
+<br>  
 
-- 스프링 부트 버전 상관 없이 공통
+4. IntelliJ IDEA 오른쪽 상단에 Gradle
 ```
-IntelliJ에서 Gradle > Tasks > other > compileQuerydsl 더블 클릭
+Gradle > Tasks > other > compileQuerydsl 더블 클릭
 ```
-##### ** 앞으로 QueryDsl 사용 시, 빌드 전에 Gradle > Tasks > build > clean 혹은 ./gradle clean 후 실행 **
 <br>
 
 ---
@@ -128,6 +137,16 @@ IntelliJ에서 Gradle > Tasks > other > compileQuerydsl 더블 클릭
 ```
   
 - H2 데이터베이스는 2.1.214 버전 이상 사용   
+<br>
+
+---
+<br>  
+#### 윈도우 터미널로 빌드
+1. 해당 프로젝트 루트 디렉토리에서 윈도우 Command Prompt 실행 (윈도우 탐색기의 디렉토리 주소창 클릭 후 cmd후 엔터)
+2. gradlew clean build
+3. cd build\libs
+4. java -jar "해당 JAR 파일"
+5. 완료 시 Ctrl + C 로 종료
 <br>
 
 ---
