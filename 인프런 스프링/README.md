@@ -39,8 +39,9 @@ spring:
   jpa:
     hibernate.ddl-auto: none                                    // 하이버네이트 데이터를 시작할 때마다 생성할지 여부
     properties.hibernate:
-      format_sql: true                                          // SQL 로깅
       default_batch_fetch_size: 1000                            // Lazy 로딩 시 fetch하는 데이터의 양
+      format_sql: true                                          // SQL을 형식에 맞게 로깅을
+      use_sql_comments: true					// JPQL 로깅
     open-in-view: false                                         // OSIV
   messages.basename: messages                                   // 메시지 사용 시, 추가  
 server.servlet.session:
