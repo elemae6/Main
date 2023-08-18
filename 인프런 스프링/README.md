@@ -43,7 +43,7 @@ spring:
       default_batch_fetch_size: 1000                            // Lazy 로딩 시 fetch하는 데이터의 양
       format_sql: true                                          // SQL을 형식에 맞게 로깅을
       use_sql_comments: true					// JPQL 로깅
-    open-in-view: false                                         // OSIV
+    open-in-view: true                                          // OSIV
   messages.basename: messages                                   // 메시지 사용 시, 추가  
 server.servlet.session:
   tracking-modes: cookie                                        // 쿠키 사용 시, 추가
