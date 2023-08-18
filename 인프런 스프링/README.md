@@ -31,7 +31,7 @@ logging:
     hello.springmvc: debug                                      // hello.springmvc는 프로젝트명에 따라 변경
     org.hibernate.SQL: debug                                    // SQL 로깅
 spring:
-  profiles.active: local                                        // profile 설정 (예. local, develop, test, real...)
+  profiles.active: local                                        // profile 설정 (예. local, develop, test...)
   output.ansi.enabled: ALWAYS                                   // 로깅 색깔
   datasource:
     url: jdbc:h2:tcp://localhost/~/jpashop                      // H2 접속 주소
