@@ -14,7 +14,7 @@ H2 Database
 ```
 testCompileOnly 'org.projectlombok:lombok'  
 testAnnotationProcessor 'org.projectlombok:lombok'                                   // 테스트용 Lombok
-implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'            // Spring Boot Data Source Decorator
+implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'            // Spring Boot Data Source Decorator, 스프링 부트 2.x.x는 1.8.0
 ```
  
 
@@ -75,8 +75,8 @@ plugins {
 }
 dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
-	annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
-	annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
+	annotationProcessor 'jakarta.persistence:jakarta.persistence-api'    // (스프링 부트 3.0 이상 부터)
+	annotationProcessor 'jakarta.annotation:jakarta.annotation-api'      // (스프링 부트 3.0 이상 부터)
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
 	annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
 }
@@ -95,11 +95,11 @@ compileQuerydsl {
 	options.annotationProcessorPath = configurations.querydsl
 }
 ```
-2. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리)
+2. 프로젝트의 루트 디렉토리 (build.gradle 있는 디렉토리) (스프링 부트 3.0 이상 부터)
 ```
 \libs 디렉토리 생성
 ```  
-3. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1
+3. C:\Users\\{사용자명}\\.gradle\caches\modules-2\files-2.1  (스프링 부트 3.0 이상 부터)
 ```
 \com.querydsl
 \com.mysema.home
@@ -111,7 +111,7 @@ compileQuerydsl {
 프로젝트의 루트 디렉토리 내 \libs 내에 복사
 (단, querydsl-core의 경우 버전으로 끝나는 것을 복사)
 ```
-4. build.gradle
+4. build.gradle  (스프링 부트 3.0 이상 부터)
 ```
 dependencies {
 	//implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
