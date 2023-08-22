@@ -15,7 +15,7 @@ H2 Database
 testCompileOnly 'org.projectlombok:lombok'  
 testAnnotationProcessor 'org.projectlombok:lombok'                                   // 테스트용 Lombok
 implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'            // Spring Boot Data Source Decorator, 스프링 부트 2.x.x는 1.8.0
-implementation 'org.springframework.boot:spring-boot-starter-aop'	 	     // aspectJ 관련 라이버리
+implementation 'org.springframework.boot:spring-boot-starter-aop'	 	     // aspectJ 관련 라이브러리
 ```
  
 
