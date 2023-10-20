@@ -1,0 +1,1 @@
+BSS(Basic Service Set)는 하나의 [[무선 LAN(IEEE 802.11)|WLAN]]에서 통신하는 하나의 장치 세트입니다.

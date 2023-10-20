@@ -1,0 +1,1 @@
+ICMP(Internet Control Message Protocol, [[인터넷]] 제어 메시지 프로토콜)은 [[인터넷 프로토콜 스위트]]의 주요 프로토콜 가운데 하나이다.

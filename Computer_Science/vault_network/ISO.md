@@ -1,0 +1,1 @@
+국제 표준화 기구(International Organization for Standardization)으로 여러 나라에 있는 표준 제정 단체에서 뽑힌 대표로 이루어진 표준화 기구이다. 1947년에 출범하였으며 국제적으로 두루 쓰는 표준을 만들고 보급한다.

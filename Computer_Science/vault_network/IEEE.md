@@ -1,0 +1,1 @@
+전기전자공학자협회(Institute of Electrical and Electronics Engineers, IEEE)는 전기전자공학 전문가들의 국제조직이다. 이 조직에서 [[네트워크 프로토콜]]를 한다.[[이더넷]] 프로토콜을 표준화하였다.

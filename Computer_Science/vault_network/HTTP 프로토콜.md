@@ -1,0 +1,1 @@
+HTTP(HyperText Transfer Protocol)은 [[월드 와이드 웹|웹]] 상에서 정보를 주고받을 수 있는 프로토콜이다. 주로 [[HTML]] 문서를 주고받는 데에 쓰인다. 
